@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="My Platformer Game"
+run/main_scene="uid://bx28xd2b0in5m"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
