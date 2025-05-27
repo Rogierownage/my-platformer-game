@@ -1,2 +1,6 @@
 res://main.tscn
 res://main.gd
+res://menu.tscn
+res://menu.gd
+res://world.tscn
+res://world.gd

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d2csuxn1j6hkd"
+path="res://.godot/imported/Maniac.ogg-2213caefed40d4c34cf10a5bcc881fc3.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sunny Land/Music/Adventure pack 2/Maniac.ogg"
+dest_files=["res://.godot/imported/Maniac.ogg-2213caefed40d4c34cf10a5bcc881fc3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

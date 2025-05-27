@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bb3ni6r24niwj"
+path="res://.godot/imported/chibi-robot-b.ogg-4c3dc67c0c538f9df4a84b0f375b82bd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sunny Land/Music/Adventure pack 1/chibi-robot-b.ogg"
+dest_files=["res://.godot/imported/chibi-robot-b.ogg-4c3dc67c0c538f9df4a84b0f375b82bd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
