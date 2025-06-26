@@ -1,85 +1,60 @@
-[gd_scene load_steps=8 format=3 uid="uid://b2ku51fegpf4"]
+[gd_scene load_steps=7 format=3 uid="uid://b2ku51fegpf4"]
 
-[ext_resource type="Texture2D" uid="uid://d2wv2tgce840v" path="res://Sunny Land/Assets/Environments/Forest/Forest Pack/PNG/sprites/misc/star/star-1.png" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://bwj3hunvvsckp" path="res://world.gd" id="1_pkg7o"]
-[ext_resource type="Texture2D" uid="uid://b23akp7ymsvox" path="res://Sunny Land/Assets/Environments/Forest/Forest Pack/PNG/sprites/misc/chest/chest-2.png" id="2_fj7yv"]
-[ext_resource type="Texture2D" uid="uid://41uum7b3ejo2" path="res://Sunny Land/Assets/Environments/Forest/Forest Pack/PNG/sprites/misc/carrot/carrot-1.png" id="3_dwbse"]
-[ext_resource type="Texture2D" uid="uid://cf4gc8b2jdr4h" path="res://Sunny Land/Assets/Environments/Forest/Forest Pack/PNG/sprites/enemies/slug/slug-1.png" id="4_pkg7o"]
-[ext_resource type="Texture2D" uid="uid://tmvrify7f432" path="res://Sunny Land/Assets/Environments/Forest/Forest Expansion Pack/Sprites/shroom_house.png" id="5_gbfbk"]
-[ext_resource type="Texture2D" uid="uid://who6a86gxipq" path="res://Sunny Land/Assets/Environments/SunnyLand/Props/tree-house.png" id="6_ioo17"]
+[ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot-collectible.tscn" id="4_aqk2v"]
+[ext_resource type="AudioStream" uid="uid://c6ci1u1jjsgnq" path="res://Sunny Land/Music/Adventure pack 1/hurry_up_and_run.ogg" id="5_036b0"]
+[ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://retro-coin-4-236671.mp3" id="6_dwbse"]
+[ext_resource type="PackedScene" uid="uid://cikdl8x5paki4" path="res://rock_pile.tscn" id="8_gbfbk"]
+[ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="9_ioo17"]
 
 [node name="Main" type="Node2D"]
 scale = Vector2(3, 3)
 script = ExtResource("1_pkg7o")
 
-[node name="Welcome" type="RichTextLabel" parent="."]
-offset_left = 89.0
-offset_top = 38.0
-offset_right = 175.0
-offset_bottom = 116.0
-text = "This is the world"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
+[node name="Rock-pile" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(60, 170.667)
 
-[node name="Star-1" type="Sprite2D" parent="."]
-position = Vector2(58, 80)
-texture = ExtResource("1_f3sb7")
+[node name="Rock-pile2" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(234, 114.667)
 
-[node name="Chest-2" type="Sprite2D" parent="."]
-position = Vector2(56, 102)
-texture = ExtResource("2_fj7yv")
+[node name="Player" parent="." instance=ExtResource("9_ioo17")]
+position = Vector2(237, 53.3333)
 
-[node name="Carrot-1" type="Sprite2D" parent="."]
-position = Vector2(133, 23)
-texture = ExtResource("3_dwbse")
+[node name="collectible-carrot" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(154, 104)
 
-[node name="Carrot-2" type="Sprite2D" parent="."]
-position = Vector2(89, 32.6667)
-texture = ExtResource("3_dwbse")
+[node name="collectible-carrot2" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(124.333, 40.3333)
 
-[node name="Carrot-4" type="Sprite2D" parent="."]
-position = Vector2(207.667, 59.6667)
-texture = ExtResource("3_dwbse")
+[node name="collectible-carrot3" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(117.667, 157.333)
 
-[node name="Carrot-5" type="Sprite2D" parent="."]
-position = Vector2(216, 32.6667)
-texture = ExtResource("3_dwbse")
+[node name="collectible-carrot4" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(293, 64)
 
-[node name="Carrot-6" type="Sprite2D" parent="."]
-position = Vector2(197, 32.6667)
-texture = ExtResource("3_dwbse")
+[node name="collectible-carrot5" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(183, 38.6667)
 
-[node name="Carrot-7" type="Sprite2D" parent="."]
-position = Vector2(106.333, 13.6667)
-texture = ExtResource("3_dwbse")
+[node name="collectible-carrot6" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(83, 44)
 
-[node name="Carrot-8" type="Sprite2D" parent="."]
-position = Vector2(56.6667, 55.6667)
-texture = ExtResource("3_dwbse")
+[node name="collectible-carrot7" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(32.3333, 101)
 
-[node name="Carrot-9" type="Sprite2D" parent="."]
-position = Vector2(114.667, 38)
-texture = ExtResource("3_dwbse")
+[node name="hud" type="CanvasLayer" parent="."]
 
-[node name="Carrot-3" type="Sprite2D" parent="."]
-position = Vector2(164, 32.6667)
-texture = ExtResource("3_dwbse")
+[node name="score-tracker" type="Label" parent="hud"]
+offset_left = 966.0
+offset_top = 2.0
+offset_right = 1192.0
+offset_bottom = 85.0
+theme_override_font_sizes/font_size = 45
+text = "Score: 0"
 
-[node name="Slug-1" type="Sprite2D" parent="."]
-position = Vector2(186, 97)
-texture = ExtResource("4_pkg7o")
+[node name="music-bg" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_036b0")
+autoplay = true
+parameters/looping = true
 
-[node name="ShroomHouse" type="Sprite2D" parent="."]
-position = Vector2(183, 155)
-scale = Vector2(0.182692, 0.182692)
-texture = ExtResource("5_gbfbk")
-
-[node name="Tree-house" type="Sprite2D" parent="."]
-position = Vector2(118, 160)
-scale = Vector2(0.483193, 0.483193)
-texture = ExtResource("6_ioo17")
-
-[node name="Tree-house2" type="Sprite2D" parent="."]
-position = Vector2(299, 123)
-texture = ExtResource("6_ioo17")
+[node name="collect-sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_dwbse")

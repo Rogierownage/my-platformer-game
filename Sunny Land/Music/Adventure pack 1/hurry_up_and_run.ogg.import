@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/hurry_up_and_run.ogg-7c3e1743f118843a17e49086
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

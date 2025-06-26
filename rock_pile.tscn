@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://cikdl8x5paki4"]
+
+[ext_resource type="PackedScene" uid="uid://wy5p08oj2n0e" path="res://rock_big.tscn" id="1_43ivw"]
+[ext_resource type="PackedScene" uid="uid://bd3u5m8p3nrsc" path="res://rock_flat.tscn" id="2_gxf23"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Big-rock-1" parent="." instance=ExtResource("1_43ivw")]
+position = Vector2(8.99988, -6.54431)
+rotation = 0.261799
+scale = Vector2(1, 1)
+
+[node name="Flat-rock-1" parent="." instance=ExtResource("2_gxf23")]
+z_index = 4
+position = Vector2(24.0001, 6.45575)
+rotation = 1.8326
+
+[node name="Big-rock-2" parent="." instance=ExtResource("1_43ivw")]
+z_index = 5
+position = Vector2(-6, -8.544)
+scale = Vector2(1, 1)
+
+[node name="Flat-rock-2" parent="." instance=ExtResource("2_gxf23")]
+z_index = 3
+position = Vector2(-22, 1.456)
+
+[node name="Flat-rock-3" parent="." instance=ExtResource("2_gxf23")]
+z_index = 4
+position = Vector2(-27, 9.456)
+
+[node name="Flat-rock-4" parent="." instance=ExtResource("2_gxf23")]
+z_index = 4
+position = Vector2(-11, -17.544)
+rotation = -0.785398

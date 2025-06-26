@@ -1,9 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1748347399
-icon.svg::CompressedTexture2D/CompressedTexture2D::592256068721468958::1748335730::1748335745::1::::<><><>0<>0<>f0942c543e0e867b0ceb514de8310e1b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-menu.gd::GDScript/GDScript::3195211818387221029::1748346473::0::1::::<>Node2D<><>0<>0<><>::
-menu.tscn::PackedScene/PackedScene::4058547220107509740::1748346473::0::1::::<><><>0<>0<><>::uid://blr1w3vkwl0eb::::res://menu.gd
-world.tscn::PackedScene/PackedScene::126571544901603859::1748346473::0::1::::<><><>0<>0<><>::
+::res://::1750952591
+carrot-collectible.tscn::PackedScene::8069096274435063248::1750951474::0::1::::<><><>0<>0<><>::uid://b5pl010y5mn7x::::res://carrot_collectible.gd<>uid://41uum7b3ejo2::::res://Sunny Land/Assets/Environments/Forest/Forest Pack/PNG/sprites/misc/carrot/carrot-1.png
+menu.gd::GDScript/GDScript::3195211818387221029::1750923311::0::1::::<>Node2D<><>0<>0<><>::
+menu.tscn::PackedScene::4058547220107509740::1750951474::0::1::::<><><>0<>0<><>::uid://blr1w3vkwl0eb::::res://menu.gd
+carrot_collectible.gd::GDScript::4523765596271264907::1750950906::0::1::::<>Area2D<><>0<>0<><>::
+retro-coin-4-236671.mp3::AudioStreamMP3::6867811463424864230::1750952591::1750952592::1::::<><><>0<>0<>31a02ac867211515b8a72c7f2c900310<>res://.godot/imported/retro-coin-4-236671.mp3-6ac2edfb8a95b485e57aff4dcda6f9d3.mp3str::
+rock_big.tscn::PackedScene::1595549287537213810::1750951474::0::1::::<><><>0<>0<><>::uid://bgq221fwvwafy::::res://Sunny Land/Assets/Environments/SunnyLand/Props/rock-1.png
+rock_flat.tscn::PackedScene::2656058387371575538::1750951474::0::1::::<><><>0<>0<><>::uid://dqy4owmtgvhqm::::res://Sunny Land/Assets/Environments/SunnyLand/Props/rock.png
+rock_pile.tscn::PackedScene::5355199458926488133::1750951474::0::1::::<><><>0<>0<><>::uid://wy5p08oj2n0e::::res://rock_big.tscn<>uid://bd3u5m8p3nrsc::::res://rock_flat.tscn
+world.gd::GDScript::3950868291403524139::1750950721::0::1::::<>Node2D<><>0<>0<><>::
+world.tscn::PackedScene::126571544901603859::1750951474::0::1::::<><><>0<>0<><>::uid://bwj3hunvvsckp::::res://world.gd<>uid://dm7y3pi3ytyn5::::res://carrot-collectible.tscn<>uid://c6ci1u1jjsgnq::::res://Sunny Land/Music/Adventure pack 1/hurry_up_and_run.ogg<>uid://cikdl8x5paki4::::res://rock_pile.tscn<>uid://dirxojsafilv::::res://Player/Player.tscn
+::res://Player/::1750951474
+player.gd::GDScript::2604305027529143297::1750950316::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::228155565131603411::1750951474::0::1::::<><><>0<>0<><>::uid://bgy52y8knrr8l::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/idle/player-idle-1.png<>uid://bddsr17fteogn::::res://Player/player.gd<>uid://188el8yhg1wr::::res://Sunny Land/Assets/Characters/Players/Foxy/Spritesheet.png<>uid://b31s8ic3saqlg::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/idle/player-idle-2.png<>uid://cvifcwe4cvkud::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/idle/player-idle-3.png<>uid://ui86qrnbxnkv::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/idle/player-idle-4.png<>uid://dhskahngnk17m::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/jump/player-jump-1.png<>uid://jq3l3r8g400n::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/jump/player-jump-2.png<>uid://bc27eqjc0eqtl::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-1.png<>uid://byu2om0hauunf::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-2.png<>uid://cept7j5t1chbu::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-3.png<>uid://5ggy1bqq6dvl::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-4.png<>uid://ci0se8ux57a33::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-5.png<>uid://crh3f143edt7o::::res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-6.png
 ::res://Sunny Land/::1748347223
 ::res://Sunny Land/Assets/::1748347107
 ::res://Sunny Land/Assets/Characters/::1748347104
@@ -1365,16 +1374,17 @@ gem.png::CompressedTexture2D/CompressedTexture2D::2218332654169885713::174834710
 ::res://Sunny Land/Music/::1748347399
 platformer_level03.mp3::AudioStreamMP3/AudioStreamMP3::7700667181489409038::1748347170::1748347224::1::::<><><>0<>0<>59b2a4113d3cead8c705dea55f34ffb2<>res://.godot/imported/platformer_level03.mp3-2a0537dc9f6c61615d361571af0d2d3c.mp3str::
 platformer_level03_loop.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::378230258602451826::1748347170::1748347224::1::::<><><>0<>0<>29b91b11aee8fe6c1a11ac4601731b7b<>res://.godot/imported/platformer_level03_loop.ogg-b4997f8975b0d62ea4107f984c695055.oggvorbisstr::
-::res://Sunny Land/Music/Adventure pack 1/::1748347385
-arcade.ogg::AudioStreamOggVorbis::8627558131027110247::1748347384::1748347400::1::::<><><>0<>0<>0e0eba8f3d3bf39adc4b3a10c9784ef9<>res://.godot/imported/arcade.ogg-09a4982670cec416f04b81e8f0b60aa7.oggvorbisstr::
-chibi-robot-b.ogg::AudioStreamOggVorbis::2515217367453571053::1748347384::1748347400::1::::<><><>0<>0<>5f9b9171b48c1a1de1fc46b897571e09<>res://.godot/imported/chibi-robot-b.ogg-4c3dc67c0c538f9df4a84b0f375b82bd.oggvorbisstr::
-dark-happy-world.ogg::AudioStreamOggVorbis::614354564156287311::1748347384::1748347400::1::::<><><>0<>0<>3e64f6208d56e507ccaf82c49d4972a6<>res://.godot/imported/dark-happy-world.ogg-3e93a1df71d9ae7c2cbdd0cee4accd23.oggvorbisstr::
-exploration.ogg::AudioStreamOggVorbis::7815896282794917636::1748347384::1748347400::1::::<><><>0<>0<>782e2f787426b223fad22590d8ab264e<>res://.godot/imported/exploration.ogg-e3082ffe0cc8f943efff6b6b5bc4a4b8.oggvorbisstr::
-fantasy Dragon.ogg::AudioStreamOggVorbis::3900794668430955473::1748347384::1748347400::1::::<><><>0<>0<>53d2c3e1c48af55bb578aa6bfa474d11<>res://.godot/imported/fantasy Dragon.ogg-37f4a80174ce49a81f6b7ee9136d02ae.oggvorbisstr::
-Going Up.ogg::AudioStreamOggVorbis::6814994921332250828::1748347384::1748347400::1::::<><><>0<>0<>13d142c96db89e1de590bd2aea59dad4<>res://.godot/imported/Going Up.ogg-6693fe733a0faa9e525a715c5c8b16bc.oggvorbisstr::
-happywalking.ogg::AudioStreamOggVorbis::5473326336101222899::1748347384::1748347400::1::::<><><>0<>0<>7c4f8f4acbe31a28fc76ff1ea08c3126<>res://.godot/imported/happywalking.ogg-e34f80aa8d0150f2ddaa4e34257b4766.oggvorbisstr::
-hurry_up_and_run.ogg::AudioStreamOggVorbis::6953357533310562978::1748347384::1748347400::1::::<><><>0<>0<>fdec33604d2ee2b15d02b175390122e3<>res://.godot/imported/hurry_up_and_run.ogg-7c3e1743f118843a17e49086e20e23f8.oggvorbisstr::
-public-license.txt::TextFile::-1::1748347384::0::1::::<><><>0<>0<><>::
+::res://Sunny Land/Music/Adventure pack 1/::1750952576
+arcade.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8627558131027110247::1748347384::1748347400::1::::<><><>0<>0<>0e0eba8f3d3bf39adc4b3a10c9784ef9<>res://.godot/imported/arcade.ogg-09a4982670cec416f04b81e8f0b60aa7.oggvorbisstr::
+chibi-robot-b.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::2515217367453571053::1748347384::1748347400::1::::<><><>0<>0<>5f9b9171b48c1a1de1fc46b897571e09<>res://.godot/imported/chibi-robot-b.ogg-4c3dc67c0c538f9df4a84b0f375b82bd.oggvorbisstr::
+dark-happy-world.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::614354564156287311::1748347384::1748347400::1::::<><><>0<>0<>3e64f6208d56e507ccaf82c49d4972a6<>res://.godot/imported/dark-happy-world.ogg-3e93a1df71d9ae7c2cbdd0cee4accd23.oggvorbisstr::
+exploration.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::7815896282794917636::1748347384::1748347400::1::::<><><>0<>0<>782e2f787426b223fad22590d8ab264e<>res://.godot/imported/exploration.ogg-e3082ffe0cc8f943efff6b6b5bc4a4b8.oggvorbisstr::
+fantasy Dragon.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::3900794668430955473::1748347384::1748347400::1::::<><><>0<>0<>53d2c3e1c48af55bb578aa6bfa474d11<>res://.godot/imported/fantasy Dragon.ogg-37f4a80174ce49a81f6b7ee9136d02ae.oggvorbisstr::
+Going Up.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::6814994921332250828::1748347384::1748347400::1::::<><><>0<>0<>13d142c96db89e1de590bd2aea59dad4<>res://.godot/imported/Going Up.ogg-6693fe733a0faa9e525a715c5c8b16bc.oggvorbisstr::
+happywalking.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::5473326336101222899::1748347384::1748347400::1::::<><><>0<>0<>7c4f8f4acbe31a28fc76ff1ea08c3126<>res://.godot/imported/happywalking.ogg-e34f80aa8d0150f2ddaa4e34257b4766.oggvorbisstr::
+hurry_up_and_run.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::6953357533310562978::1748347384::1750951459::1::::<><><>0<>0<>df19bf057c107d21d9645f0b6647ca87<>res://.godot/imported/hurry_up_and_run.ogg-7c3e1743f118843a17e49086e20e23f8.oggvorbisstr::
+public-license.txt::TextFile/TextFile::-1::1748347384::0::1::::<><><>0<>0<><>::
+retro-coin-4-236671.mp3::AudioStreamMP3::3698250395618327205::1750952576::1750952559::1::::<><><>0<>0<>3577194ff0275dfd95b1d75591bf4be2<>res://.godot/imported/retro-coin-4-236671.mp3-e065a6f9439fa50009079c7865899e1f.mp3str::
 ::res://Sunny Land/Music/Adventure pack 2/::1748347395
 Hurt_and_heart.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::4330040613691881885::1748347384::1748347395::1::::<><><>0<>0<>263c4cc7a921cf4b545286848e13d3ea<>res://.godot/imported/Hurt_and_heart.ogg-40490f07cbf03f2924935f6b08498e0c.oggvorbisstr::
 joyful.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::6438353246321617449::1748347384::1748347395::1::::<><><>0<>0<>39c5ed8a6e5c9b1146687cc71a3096bb<>res://.godot/imported/joyful.ogg-b97fb1efcc4d9a69278a3e916386ee69.oggvorbisstr::

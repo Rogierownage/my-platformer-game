@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://wy5p08oj2n0e"]
+
+[ext_resource type="Texture2D" uid="uid://bgq221fwvwafy" path="res://Sunny Land/Assets/Environments/SunnyLand/Props/rock-1.png" id="1_g2qxp"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Rock-3" type="Sprite2D" parent="."]
+texture = ExtResource("1_g2qxp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-10, -6, -1, -24, 8, -24, 25, 18, 19, 23, -4, 21, -11, 25, -25, 21, -15, -6)

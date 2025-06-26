@@ -1,6 +1,13 @@
-res://main.tscn
-res://main.gd
 res://menu.tscn
-res://menu.gd
 res://world.tscn
+res://menu.gd
+res://five_carrots.tscn
+res://Player/Player.tscn
+res://rock_pile.tscn
+res://rock_big.tscn
+res://rock_flat.tscn
+res://Player/animated_sprite_2d.gd
+res://Player/player.gd
+res://carrot-collectible.tscn
+res://carrot_collectible.gd
 res://world.gd
