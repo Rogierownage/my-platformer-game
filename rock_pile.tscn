@@ -8,7 +8,6 @@
 [node name="Big-rock-1" parent="." instance=ExtResource("1_43ivw")]
 position = Vector2(8.99988, -6.54431)
 rotation = 0.261799
-scale = Vector2(1, 1)
 
 [node name="Flat-rock-1" parent="." instance=ExtResource("2_gxf23")]
 z_index = 4
@@ -18,7 +17,6 @@ rotation = 1.8326
 [node name="Big-rock-2" parent="." instance=ExtResource("1_43ivw")]
 z_index = 5
 position = Vector2(-6, -8.544)
-scale = Vector2(1, 1)
 
 [node name="Flat-rock-2" parent="." instance=ExtResource("2_gxf23")]
 z_index = 3

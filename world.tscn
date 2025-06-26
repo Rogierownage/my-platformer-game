@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bwj3hunvvsckp" path="res://world.gd" id="1_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot-collectible.tscn" id="4_aqk2v"]
-[ext_resource type="AudioStream" uid="uid://c6ci1u1jjsgnq" path="res://Sunny Land/Music/Adventure pack 1/hurry_up_and_run.ogg" id="5_036b0"]
-[ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://retro-coin-4-236671.mp3" id="6_dwbse"]
+[ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://sound-collect.mp3" id="6_dwbse"]
+[ext_resource type="Texture2D" uid="uid://xntw1ca6v1ki" path="res://background-grassy.png" id="6_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://cikdl8x5paki4" path="res://rock_pile.tscn" id="8_gbfbk"]
 [ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="9_ioo17"]
 
@@ -51,10 +51,15 @@ offset_bottom = 85.0
 theme_override_font_sizes/font_size = 45
 text = "Score: 0"
 
-[node name="music-bg" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("5_036b0")
-autoplay = true
-parameters/looping = true
-
 [node name="collect-sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_dwbse")
+
+[node name="background2" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="background2"]
+offset_top = 2.0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("6_pkg7o")
+expand_mode = 1
