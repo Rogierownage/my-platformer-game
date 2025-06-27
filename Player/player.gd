@@ -52,6 +52,7 @@ func acceptMovementInput(delta: float) -> void:
 	velocity.x = move_toward(velocity.x, 0, SPEED)
 
 func applyJump(delta: float) -> void:
+	$"Jump-sound".play()
 	velocity.y = JUMP_VELOCITY
 	
 func updateCoyoteTimer() -> void:

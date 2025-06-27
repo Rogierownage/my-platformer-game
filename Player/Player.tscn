@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dirxojsafilv"]
+[gd_scene load_steps=20 format=3 uid="uid://dirxojsafilv"]
 
 [ext_resource type="Texture2D" uid="uid://bgy52y8knrr8l" path="res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/idle/player-idle-1.png" id="1_6ysni"]
 [ext_resource type="Script" uid="uid://bddsr17fteogn" path="res://Player/player.gd" id="1_dm7nj"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://5ggy1bqq6dvl" path="res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-4.png" id="12_d7xyo"]
 [ext_resource type="Texture2D" uid="uid://ci0se8ux57a33" path="res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-5.png" id="13_evw08"]
 [ext_resource type="Texture2D" uid="uid://crh3f143edt7o" path="res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-6.png" id="14_roy6y"]
+[ext_resource type="AudioStream" uid="uid://bricibbjuyd03" path="res://jump-sound.mp3" id="15_3mea3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5wa8t"]
 height = 26.0
@@ -106,5 +107,8 @@ autoplay = "idle"
 [node name="Timer-coyote" type="Timer" parent="."]
 wait_time = 0.3
 one_shot = true
+
+[node name="Jump-sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_3mea3")
 
 [connection signal="timeout" from="Timer-coyote" to="." method="_on_timercoyote_timeout"]
