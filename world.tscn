@@ -19,7 +19,7 @@ position = Vector2(60, 170.667)
 position = Vector2(234, 114.667)
 
 [node name="Player" parent="." instance=ExtResource("9_ioo17")]
-position = Vector2(237, 53.3333)
+position = Vector2(232.667, 64)
 
 [node name="collectible-carrot" parent="." instance=ExtResource("4_aqk2v")]
 position = Vector2(121.333, 108.333)

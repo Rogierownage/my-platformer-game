@@ -101,7 +101,7 @@ shape = SubResource("CapsuleShape2D_5wa8t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_p7tob")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="Timer-coyote" type="Timer" parent="."]
