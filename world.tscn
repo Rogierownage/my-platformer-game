@@ -73,4 +73,4 @@ rotation = -1.57079
 scale = Vector2(0.7, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(193, 108.667)
+position = Vector2(192, 108)

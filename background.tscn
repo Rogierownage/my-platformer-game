@@ -6,7 +6,6 @@
 layer = -1
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_top = 2.0
 offset_right = 1152.0
 offset_bottom = 648.0
 mouse_filter = 2
