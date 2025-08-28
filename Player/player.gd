@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED: int = 300
-const JUMP_VELOCITY: int = -500
+const SPEED: int = 100
+const JUMP_VELOCITY: int = -170
 const DEATH_PLANE_Y: int = 200
 var double_jump_available: bool = true
 @onready var animation = $"AnimatedSprite2D"
