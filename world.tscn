@@ -4,10 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot-collectible.tscn" id="4_aqk2v"]
 [ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://sound-collect.mp3" id="6_dwbse"]
 [ext_resource type="PackedScene" uid="uid://cb7doeas3uvnk" path="res://background.tscn" id="6_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://npig0t7wu5ec" path="res://wall.tscn" id="7_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://cikdl8x5paki4" path="res://rock_pile.tscn" id="8_gbfbk"]
 [ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="9_ioo17"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwbse"]
 
 [node name="Main" type="Node2D"]
 scale = Vector2(3, 3)
@@ -23,7 +22,7 @@ position = Vector2(234, 114.667)
 position = Vector2(237, 53.3333)
 
 [node name="collectible-carrot" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(154, 104)
+position = Vector2(121.333, 108.333)
 
 [node name="collectible-carrot2" parent="." instance=ExtResource("4_aqk2v")]
 position = Vector2(124.333, 40.3333)
@@ -46,6 +45,7 @@ position = Vector2(32.3333, 101)
 [node name="hud" type="CanvasLayer" parent="."]
 
 [node name="score-tracker" type="Label" parent="hud"]
+z_index = 1
 offset_left = 966.0
 offset_top = 2.0
 offset_right = 1192.0
@@ -53,14 +53,24 @@ offset_bottom = 85.0
 theme_override_font_sizes/font_size = 45
 text = "Score: 0"
 
+[node name="Panel" type="Panel" parent="hud"]
+offset_left = 947.0
+offset_top = 2.0
+offset_right = 1152.0
+offset_bottom = 69.0
+
 [node name="collect-sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_dwbse")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-12.3333, 31.3333)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(195, 45.6667)
-shape = SubResource("RectangleShape2D_dwbse")
-
 [node name="background" parent="." instance=ExtResource("6_pkg7o")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("7_pkg7o")]
+position = Vector2(154.667, 189.667)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("7_pkg7o")]
+position = Vector2(179.667, 144.667)
+rotation = -1.57079
+scale = Vector2(0.7, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(193, 108.667)

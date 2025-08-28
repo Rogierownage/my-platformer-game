@@ -2,64 +2,72 @@ extends CharacterBody2D
 
 const SPEED: int = 300
 const JUMP_VELOCITY: int = -500
+const DEATH_PLANE_Y: int = 200
 var double_jump_available: bool = true
-var coyote_timer_running: bool = false
-var DEATH_PLANE_Y: int = 200
+@onready var animation = $"AnimatedSprite2D"
+@onready var coyoteTimer = $"Timer-coyote"
 
 func _physics_process(delta: float) -> void:
-	updateVelocity(delta)
+	handleMovement(delta)
+	checkDeath()
+	updateCoyoteTimer()
+	updateDoubleJump()
 	
 	move_and_slide()
 	
-func updateVelocity(delta:float) -> void:
-	acceptMovementInput(delta)
-	updateCoyoteTimer()
-	acceptJumpInput(delta)
+func handleMovement(delta:float) -> void:
+	acceptMovementInput()
+	acceptJumpInput()
 	handleGravity(delta)
-	updateDoubleJump()
-	checkDeath()
 
 func handleGravity(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		
-func acceptJumpInput(delta: float) -> void:
+func acceptJumpInput() -> void:
 	if not Input.is_action_just_pressed("jump"):
 		return
 		
-	if coyote_timer_running:
-		applyJump(delta)
+	if !coyoteTimer.is_stopped():
+		applyJump()
 		
-		coyote_timer_running = false
-		$"Timer-coyote".stop()
+		coyoteTimer.stop()
 		
 		return
 	if double_jump_available:
-		applyJump(delta)
+		applyJump()
 		
 		double_jump_available = false
 		
 		return
 
-func acceptMovementInput(delta: float) -> void:
+func acceptMovementInput() -> void:
+	var shouldPlayAnimation = is_on_floor()
 	var direction := Input.get_axis("left", "right")
-	if direction != 0:
-		velocity.x = direction * SPEED
+	
+	if direction == 0:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
-		$AnimatedSprite2D.flip_h = direction < 0
-			
+		if shouldPlayAnimation: animation.play('idle')
+		
 		return
-	velocity.x = move_toward(velocity.x, 0, SPEED)
-
-func applyJump(delta: float) -> void:
+		
+	velocity.x = direction * SPEED
+	
+	animation.flip_h = direction < 0
+	
+	if shouldPlayAnimation: animation.play('run')
+	
+func applyJump() -> void:
 	$"Jump-sound".play()
+	animation.play('jump')
 	velocity.y = JUMP_VELOCITY
 	
 func updateCoyoteTimer() -> void:
-	if is_on_floor() and not coyote_timer_running:
-		coyote_timer_running = true
-		$"Timer-coyote".stop()
-		$"Timer-coyote".start()
+	
+	if is_on_floor() and velocity.y >= 0:
+		coyoteTimer.stop()
+		coyoteTimer.start()
 	
 func updateDoubleJump() -> void:
 	if is_on_floor():
@@ -68,6 +76,3 @@ func updateDoubleJump() -> void:
 func checkDeath() -> void:
 	if position.y > DEATH_PLANE_Y:
 		get_tree().reload_current_scene()
-	
-func _on_timercoyote_timeout() -> void:
-	coyote_timer_running = false

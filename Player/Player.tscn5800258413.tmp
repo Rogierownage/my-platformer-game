@@ -110,3 +110,5 @@ one_shot = true
 
 [node name="Jump-sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_3mea3")
+
+[connection signal="timeout" from="Timer-coyote" to="." method="_on_timercoyote_timeout"]
