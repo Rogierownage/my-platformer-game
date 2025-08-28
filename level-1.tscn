@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://b2ku51fegpf4"]
+
+[ext_resource type="Script" uid="uid://bwj3hunvvsckp" path="res://level-1.gd" id="1_k5qh3"]
+[ext_resource type="PackedScene" uid="uid://cikdl8x5paki4" path="res://rock_pile.tscn" id="2_8ibgy"]
+[ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="3_1mgki"]
+[ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot-collectible.tscn" id="4_cam0j"]
+[ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://sound-collect.mp3" id="5_er01i"]
+[ext_resource type="PackedScene" uid="uid://cb7doeas3uvnk" path="res://background.tscn" id="6_18dhb"]
+[ext_resource type="PackedScene" uid="uid://npig0t7wu5ec" path="res://wall.tscn" id="7_oqo4x"]
+[ext_resource type="PackedScene" uid="uid://dd0t1oxhahrgj" path="res://hud.tscn" id="8_8ibgy"]
+
+[node name="Main" type="Node2D"]
+scale = Vector2(3, 3)
+script = ExtResource("1_k5qh3")
+
+[node name="Rock-pile" parent="." instance=ExtResource("2_8ibgy")]
+position = Vector2(60, 170.667)
+
+[node name="Rock-pile2" parent="." instance=ExtResource("2_8ibgy")]
+position = Vector2(234, 114.667)
+
+[node name="Player" parent="." instance=ExtResource("3_1mgki")]
+position = Vector2(232.667, 64)
+
+[node name="collectible-carrot" parent="." instance=ExtResource("4_cam0j")]
+position = Vector2(121.333, 108.333)
+
+[node name="collectible-carrot2" parent="." instance=ExtResource("4_cam0j")]
+position = Vector2(124.333, 40.3333)
+
+[node name="collectible-carrot3" parent="." instance=ExtResource("4_cam0j")]
+position = Vector2(117.667, 157.333)
+
+[node name="collectible-carrot4" parent="." instance=ExtResource("4_cam0j")]
+position = Vector2(293, 64)
+
+[node name="collectible-carrot5" parent="." instance=ExtResource("4_cam0j")]
+position = Vector2(183, 38.6667)
+
+[node name="collectible-carrot6" parent="." instance=ExtResource("4_cam0j")]
+position = Vector2(83, 44)
+
+[node name="collectible-carrot7" parent="." instance=ExtResource("4_cam0j")]
+position = Vector2(32.3333, 101)
+
+[node name="collect-sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_er01i")
+
+[node name="background" parent="." instance=ExtResource("6_18dhb")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("7_oqo4x")]
+position = Vector2(154.667, 189.667)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("7_oqo4x")]
+position = Vector2(179.667, 144.667)
+rotation = -1.57079
+scale = Vector2(0.7, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(192, 108)
+
+[node name="hud" parent="." instance=ExtResource("8_8ibgy")]
