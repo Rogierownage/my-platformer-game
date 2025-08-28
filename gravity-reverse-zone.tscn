@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dte3de7dlbv7o"]
+
+[ext_resource type="Texture2D" uid="uid://ncgn5x2eil3i" path="res://Sunny Land/Assets/Props Items and VFX/Grotto-escape-2-FX/sprites/energy-field/_0002_Layer-3.png" id="1_ru6dg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e6uft"]
+
+[node name="Area2D" type="Area2D"]
+gravity_space_override = 3
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+gravity = 500.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_e6uft")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1, -2)
+scale = Vector2(0.74, 0.74)
+texture = ExtResource("1_ru6dg")

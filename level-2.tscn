@@ -1,0 +1,109 @@
+[gd_scene load_steps=9 format=3 uid="uid://wgvo0oc27gue"]
+
+[ext_resource type="Script" uid="uid://bwj3hunvvsckp" path="res://level-1.gd" id="1_a2qa4"]
+[ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="3_ejhdg"]
+[ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot-collectible.tscn" id="4_7f5e0"]
+[ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://sound-collect.mp3" id="5_3c6md"]
+[ext_resource type="PackedScene" uid="uid://cb7doeas3uvnk" path="res://background.tscn" id="6_05687"]
+[ext_resource type="PackedScene" uid="uid://dte3de7dlbv7o" path="res://gravity-reverse-zone.tscn" id="7_itogy"]
+[ext_resource type="PackedScene" uid="uid://npig0t7wu5ec" path="res://wall.tscn" id="7_sfcy4"]
+[ext_resource type="PackedScene" uid="uid://dd0t1oxhahrgj" path="res://hud.tscn" id="8_wemtk"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_a2qa4")
+
+[node name="Player" parent="." instance=ExtResource("3_ejhdg")]
+position = Vector2(226, 113)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(3, 3)
+
+[node name="collect-sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_3c6md")
+
+[node name="background" parent="." instance=ExtResource("6_05687")]
+
+[node name="hud" parent="." instance=ExtResource("8_wemtk")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(326, 156)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(625, 54)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(618, -189)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(186, 49)
+rotation = -1.57079
+scale = Vector2(2, 1)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(464, 95)
+rotation = -1.57079
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(359, 9)
+rotation = -1.57079
+scale = Vector2(1.2, 1)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(274, -41)
+scale = Vector2(1.55, 1)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(420, -39)
+rotation = -3.14159
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(459, -75)
+rotation = -1.57079
+scale = Vector2(0.5, 1)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(457, -189)
+rotation = -1.57079
+scale = Vector2(0.2, 1)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(398, -88)
+rotation = -3.14159
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(398, -188)
+rotation = -3.14159
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("7_sfcy4")]
+position = Vector2(339, -139)
+rotation = -4.71238
+scale = Vector2(1.2, 1)
+
+[node name="Area2D" parent="." instance=ExtResource("7_itogy")]
+position = Vector2(406, 73)
+scale = Vector2(3, 3)
+
+[node name="Area2D5" parent="." instance=ExtResource("7_itogy")]
+position = Vector2(485, -19)
+
+[node name="Area2D2" parent="." instance=ExtResource("4_7f5e0")]
+position = Vector2(403, 72)
+rotation = 3.14159
+
+[node name="Area2D3" parent="." instance=ExtResource("4_7f5e0")]
+position = Vector2(412, -6)
+
+[node name="Area2D6" parent="." instance=ExtResource("4_7f5e0")]
+position = Vector2(369, -122)
+
+[node name="Area2D7" parent="." instance=ExtResource("4_7f5e0")]
+position = Vector2(399, -149)
+
+[node name="Area2D8" parent="." instance=ExtResource("4_7f5e0")]
+position = Vector2(428, -122)
+
+[node name="Area2D4" parent="." instance=ExtResource("4_7f5e0")]
+position = Vector2(335, 114)

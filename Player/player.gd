@@ -8,11 +8,12 @@ var double_jump_available: bool = true
 @onready var coyoteTimer = $"Timer-coyote"
 
 func _physics_process(delta: float) -> void:
+	up_direction = -get_gravity()
+	
 	handleMovement(delta)
 	checkDeath()
 	updateCoyoteTimer()
 	updateDoubleJump()
-	
 	move_and_slide()
 	
 func handleMovement(delta:float) -> void:
@@ -64,7 +65,6 @@ func applyJump() -> void:
 	velocity.y = JUMP_VELOCITY
 	
 func updateCoyoteTimer() -> void:
-	
 	if is_on_floor() and velocity.y >= 0:
 		coyoteTimer.stop()
 		coyoteTimer.start()

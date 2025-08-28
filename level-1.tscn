@@ -56,7 +56,7 @@ rotation = -1.57079
 scale = Vector2(0.7, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(195, 103)
+position = Vector2(192, 108)
 zoom = Vector2(3, 3)
 
 [node name="hud" parent="." instance=ExtResource("8_8ibgy")]
