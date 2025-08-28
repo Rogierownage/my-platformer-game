@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2ku51fegpf4"]
+[gd_scene load_steps=8 format=3 uid="uid://b2ku51fegpf4"]
 
 [ext_resource type="Script" uid="uid://bwj3hunvvsckp" path="res://world.gd" id="1_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot-collectible.tscn" id="4_aqk2v"]
 [ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://sound-collect.mp3" id="6_dwbse"]
-[ext_resource type="Texture2D" uid="uid://xntw1ca6v1ki" path="res://background-grassy.png" id="6_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://cb7doeas3uvnk" path="res://background.tscn" id="6_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://cikdl8x5paki4" path="res://rock_pile.tscn" id="8_gbfbk"]
 [ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="9_ioo17"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwbse"]
 
 [node name="Main" type="Node2D"]
 scale = Vector2(3, 3)
@@ -54,12 +56,11 @@ text = "Score: 0"
 [node name="collect-sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_dwbse")
 
-[node name="background2" type="CanvasLayer" parent="."]
-layer = -1
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-12.3333, 31.3333)
 
-[node name="TextureRect" type="TextureRect" parent="background2"]
-offset_top = 2.0
-offset_right = 1152.0
-offset_bottom = 648.0
-texture = ExtResource("6_pkg7o")
-expand_mode = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(195, 45.6667)
+shape = SubResource("RectangleShape2D_dwbse")
+
+[node name="background" parent="." instance=ExtResource("6_pkg7o")]

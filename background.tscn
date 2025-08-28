@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb7doeas3uvnk"]
+
+[ext_resource type="Texture2D" uid="uid://xntw1ca6v1ki" path="res://background-grassy.png" id="1_oabld"]
+
+[node name="background" type="CanvasLayer"]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 2.0
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+texture = ExtResource("1_oabld")
+expand_mode = 1
