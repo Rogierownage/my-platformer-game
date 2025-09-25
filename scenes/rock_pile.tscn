@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cikdl8x5paki4"]
 
-[ext_resource type="PackedScene" uid="uid://wy5p08oj2n0e" path="res://rock_big.tscn" id="1_43ivw"]
-[ext_resource type="PackedScene" uid="uid://bd3u5m8p3nrsc" path="res://rock_flat.tscn" id="2_gxf23"]
+[ext_resource type="PackedScene" uid="uid://wy5p08oj2n0e" path="res://scenes/rock_big.tscn" id="1_43ivw"]
+[ext_resource type="PackedScene" uid="uid://bd3u5m8p3nrsc" path="res://scenes/rock_flat.tscn" id="2_gxf23"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dm7y3pi3ytyn5"]
 
-[ext_resource type="Script" uid="uid://b5pl010y5mn7x" path="res://carrot_collectible.gd" id="1_1rovo"]
+[ext_resource type="Script" uid="uid://b5pl010y5mn7x" path="res://scripts/carrot_collectible.gd" id="1_1rovo"]
 [ext_resource type="Texture2D" uid="uid://41uum7b3ejo2" path="res://assets/visual/carrot.png" id="1_1sbab"]
 [ext_resource type="AudioStream" uid="uid://c43237hsg80p3" path="res://assets/audio/sound/collect.mp3" id="3_xcp3t"]
 

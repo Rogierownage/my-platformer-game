@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bn4ksd7cjfp7c"]
 
-[ext_resource type="Script" uid="uid://b5ngp8c3llxng" path="res://level_transition.gd" id="1_psae5"]
+[ext_resource type="Script" uid="uid://b5ngp8c3llxng" path="res://scripts/level_transition.gd" id="1_psae5"]
 [ext_resource type="AudioStream" uid="uid://flyvh4kavebg" path="res://assets/audio/sound/level_complete.mp3" id="2_gnlsl"]
 
 [node name="Node" type="Node"]

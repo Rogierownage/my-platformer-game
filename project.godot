@@ -16,9 +16,9 @@ config/features=PackedStringArray("4.4", "Mobile")
 
 [autoload]
 
-MusicPlayer="*res://music_player.tscn"
-SoundCollectible="*res://sound_collectible.tscn"
-GlobalVariables="*res://global_variables.gd"
+MusicPlayer="*res://scenes/music_player.tscn"
+SoundCollectible="*res://scenes/sound_collectible.tscn"
+GlobalVariables="*res://scripts/global_variables.gd"
 
 [input]
 
