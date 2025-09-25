@@ -6,7 +6,7 @@ func startTransition(level) -> void:
 	self.levelPath = level
 	GlobalVariables.paused = true
 	
-	#get_node("../Player").animation.play('spin')
+	get_node("../Player").animation.play('spin')
 		
 	$AudioStreamPlayer.play()
 
