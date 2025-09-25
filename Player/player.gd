@@ -8,6 +8,8 @@ var double_jump_available: bool = true
 @onready var coyoteTimer = $"Timer-coyote"
 
 func _physics_process(delta: float) -> void:
+	if GlobalVariables.paused: return
+	
 	up_direction = -get_gravity()
 	
 	handleMovement(delta)

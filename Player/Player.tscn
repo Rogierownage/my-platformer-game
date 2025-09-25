@@ -16,8 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://crh3f143edt7o" path="res://Sunny Land/Assets/Characters/Players/Foxy/Sprites/run/player-run-6.png" id="14_roy6y"]
 [ext_resource type="AudioStream" uid="uid://bricibbjuyd03" path="res://jump-sound.mp3" id="15_3mea3"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5wa8t"]
-height = 26.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3mea3"]
+size = Vector2(19, 22)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u5tep"]
 atlas = ExtResource("2_3mea3")
@@ -96,8 +96,8 @@ animations = [{
 script = ExtResource("1_dm7nj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 5)
-shape = SubResource("CapsuleShape2D_5wa8t")
+position = Vector2(-1.5, 5)
+shape = SubResource("RectangleShape2D_3mea3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_p7tob")

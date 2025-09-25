@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="My Platformer Game"
-run/main_scene="uid://wgvo0oc27gue"
+run/main_scene="uid://b2ku51fegpf4"
 config/features=PackedStringArray("4.4", "Mobile")
 
 [autoload]
 
 MusicPlayer="*res://music_player.tscn"
+GlobalVariables="*res://global-variables.gd"
+SoundCollectible="*res://sound-collectible.tscn"
 
 [input]
 
