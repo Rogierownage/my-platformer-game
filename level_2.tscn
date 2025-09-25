@@ -1,0 +1,109 @@
+[gd_scene load_steps=8 format=3 uid="uid://wgvo0oc27gue"]
+
+[ext_resource type="Script" uid="uid://cit3wjukcy8r2" path="res://level_2.gd" id="1_7j8ne"]
+[ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="2_7dov7"]
+[ext_resource type="PackedScene" uid="uid://cb7doeas3uvnk" path="res://background.tscn" id="3_ehv2h"]
+[ext_resource type="PackedScene" uid="uid://dd0t1oxhahrgj" path="res://hud.tscn" id="4_15wb7"]
+[ext_resource type="PackedScene" uid="uid://npig0t7wu5ec" path="res://wall.tscn" id="5_eoq84"]
+[ext_resource type="PackedScene" uid="uid://dte3de7dlbv7o" path="res://gravity_reverse_zone.tscn" id="6_yl73a"]
+[ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot_collectible.tscn" id="7_xbcdb"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(1, 0)
+script = ExtResource("1_7j8ne")
+
+[node name="Player" parent="." instance=ExtResource("2_7dov7")]
+position = Vector2(226, 113)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(3, 3)
+
+[node name="background" parent="." instance=ExtResource("3_ehv2h")]
+
+[node name="hud" parent="." instance=ExtResource("4_15wb7")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(326, 156)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(625, 54)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(618, -189)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(186, 49)
+rotation = -1.57079
+scale = Vector2(2, 1)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(464, 95)
+rotation = -1.57079
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(359, 9)
+rotation = -1.57079
+scale = Vector2(1.2, 1)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(274, -41)
+scale = Vector2(1.55, 1)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(420, -39)
+rotation = -3.14159
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(459, -75)
+rotation = -1.57079
+scale = Vector2(0.5, 1)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(457, -189)
+rotation = -1.57079
+scale = Vector2(0.2, 1)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(398, -88)
+rotation = -3.14159
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(398, -188)
+rotation = -3.14159
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("5_eoq84")]
+position = Vector2(339, -139)
+rotation = -4.71238
+scale = Vector2(1.2, 1)
+
+[node name="gravity-zone" parent="." instance=ExtResource("6_yl73a")]
+position = Vector2(406, 73)
+scale = Vector2(3, 3)
+
+[node name="gravity-zone2" parent="." instance=ExtResource("6_yl73a")]
+position = Vector2(485, -19)
+
+[node name="carrot" parent="." instance=ExtResource("7_xbcdb")]
+position = Vector2(403, 73)
+rotation = 3.14159
+
+[node name="carrot2" parent="." instance=ExtResource("7_xbcdb")]
+position = Vector2(406, -11)
+
+[node name="carrot3" parent="." instance=ExtResource("7_xbcdb")]
+position = Vector2(487, -111)
+
+[node name="carrot4" parent="." instance=ExtResource("7_xbcdb")]
+position = Vector2(369, -122)
+
+[node name="carrot5" parent="." instance=ExtResource("7_xbcdb")]
+position = Vector2(399, -149)
+
+[node name="carrot6" parent="." instance=ExtResource("7_xbcdb")]
+position = Vector2(428, -122)
+
+[node name="carrot7" parent="." instance=ExtResource("7_xbcdb")]
+position = Vector2(335, 114)

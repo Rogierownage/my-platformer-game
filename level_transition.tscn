@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn4ksd7cjfp7c"]
+
+[ext_resource type="Script" uid="uid://b5ngp8c3llxng" path="res://level_transition.gd" id="1_psae5"]
+[ext_resource type="AudioStream" uid="uid://b2s8h6dyu6k5k" path="res://level_win.mp3" id="2_gnlsl"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_psae5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_gnlsl")
+volume_db = 12.0
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
