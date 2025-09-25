@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cb7doeas3uvnk" path="res://scenes/background.tscn" id="3_ehv2h"]
 [ext_resource type="PackedScene" uid="uid://dd0t1oxhahrgj" path="res://scenes/hud.tscn" id="4_15wb7"]
 [ext_resource type="PackedScene" uid="uid://npig0t7wu5ec" path="res://scenes/wall.tscn" id="5_eoq84"]
-[ext_resource type="PackedScene" uid="uid://dte3de7dlbv7o" path="res://scenes/gravity_reverse_zone.tscn" id="6_yl73a"]
+[ext_resource type="PackedScene" uid="uid://dte3de7dlbv7o" path="res://scenes/gravity_zone.tscn" id="6_yl73a"]
 [ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://scenes/carrot_collectible.tscn" id="7_xbcdb"]
 
 [node name="Main" type="Node2D"]
