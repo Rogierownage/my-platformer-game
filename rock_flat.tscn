@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bd3u5m8p3nrsc"]
 
-[ext_resource type="Texture2D" uid="uid://dqy4owmtgvhqm" path="res://Sunny Land/Assets/Environments/SunnyLand/Props/rock.png" id="1_7oxa4"]
+[ext_resource type="Texture2D" uid="uid://dqy4owmtgvhqm" path="res://assets/visual/rock_flat.png" id="1_7oxa4"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dte3de7dlbv7o"]
 
-[ext_resource type="Texture2D" uid="uid://ncgn5x2eil3i" path="res://Sunny Land/Assets/Props Items and VFX/Grotto-escape-2-FX/sprites/energy-field/_0002_Layer-3.png" id="1_ru6dg"]
+[ext_resource type="Texture2D" uid="uid://ncgn5x2eil3i" path="res://assets/visual/gravity_zone.png" id="1_ru6dg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_e6uft"]
 

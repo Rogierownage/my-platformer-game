@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bwj3hunvvsckp" path="res://level_bonus_1.gd" id="1_ciqkw"]
 [ext_resource type="PackedScene" uid="uid://cikdl8x5paki4" path="res://rock_pile.tscn" id="2_orgub"]
-[ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://Player/Player.tscn" id="3_y4hlj"]
+[ext_resource type="PackedScene" uid="uid://dirxojsafilv" path="res://player/Player.tscn" id="3_y4hlj"]
 [ext_resource type="PackedScene" uid="uid://dm7y3pi3ytyn5" path="res://carrot_collectible.tscn" id="4_a11a1"]
 [ext_resource type="PackedScene" uid="uid://cb7doeas3uvnk" path="res://background.tscn" id="5_hngex"]
 [ext_resource type="PackedScene" uid="uid://dd0t1oxhahrgj" path="res://hud.tscn" id="6_vlt6m"]
