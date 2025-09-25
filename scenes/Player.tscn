@@ -132,5 +132,5 @@ stream = ExtResource("15_3mea3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_p7tob")
-animation = &"spin"
+animation = &"idle"
 autoplay = "idle"

@@ -24,6 +24,8 @@ func handleMovement(delta:float) -> void:
 	handleGravity(delta)
 
 func handleGravity(delta: float) -> void:
+	animation.flip_v = get_gravity()[1] < 0
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		
