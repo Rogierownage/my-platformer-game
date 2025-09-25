@@ -1,7 +1,5 @@
 - Fix player sprite when upside down (crop the image)
-- Fix animation when walking off a ledge (it plays the walking animation in mid-air)
+- Fix animation when walking off a ledge (it plays the walking animation in mid-air) - rethink the jumping animation. Right now it just plays the first frame of the animation for the first frame when jumping, and then the second frame until you hit the ground or double jump. But in reality it should play the falling animation when falling, even when not jumping beforehand. But right now there is no separate falling animation.
 - Make the walls and ceilings look nice (rather than using a panel)
 - Fix collision on walls and ceilings (they are not properly aligned, you can stand on the seams)
-- Fix jumping when standing on a ceilig (it tries to jump up into the ceiling, i think)
-  - Also figure out a good way to check when to flip the sprite and jump direction. Some sort of "gravity_is_flipped" variable or something? Or make proper use of the gravity vector, and make this logic generic for any vector? (Including sideways, diagonal)
 - Mayber add an animation or sound when hitting the death plane.
