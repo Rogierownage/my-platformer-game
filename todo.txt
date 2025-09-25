@@ -3,3 +3,4 @@
 - Make the walls and ceilings look nice (rather than using a panel)
 - Fix collision on walls and ceilings (they are not properly aligned, you can stand on the seams)
 - Mayber add an animation or sound when hitting the death plane.
+- Extract the score increasing logic. It is now somewhat duplicated.
