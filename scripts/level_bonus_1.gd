@@ -7,4 +7,4 @@ func add_score(amount: int) -> void:
 	$"hud/score-tracker".text = 'Score: ' + str(score)
 	
 	if score >= 7:
-		$"Level-transition-timer".startTransition('res://level_2.tscn')
+		$"Level-transition-timer".startTransition('res://scenes/level_2.tscn')

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwd24cdus6pen"
-path="res://.godot/imported/player-hurt-1.png-3627bbf54ca1e5814a73a63b72b0daa6.ctex"
+uid="uid://b31s8ic3saqlg"
+path="res://.godot/imported/2.png-53b333b91d22f8cfc7c2924400bff899.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/visual/foxy/hurt/player-hurt-1.png"
-dest_files=["res://.godot/imported/player-hurt-1.png-3627bbf54ca1e5814a73a63b72b0daa6.ctex"]
+source_file="res://assets/visual/foxy/idle/2.png"
+dest_files=["res://.godot/imported/2.png-53b333b91d22f8cfc7c2924400bff899.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc27eqjc0eqtl"
-path="res://.godot/imported/player-run-1.png-e35da9018be632eaf9616a233c991707.ctex"
+uid="uid://2ap6tsqbwc7w"
+path="res://.godot/imported/2.png-81bcaf2a845765856b363c95eb289d61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/visual/foxy/run/player-run-1.png"
-dest_files=["res://.godot/imported/player-run-1.png-e35da9018be632eaf9616a233c991707.ctex"]
+source_file="res://assets/visual/foxy/spin/2.png"
+dest_files=["res://.godot/imported/2.png-81bcaf2a845765856b363c95eb289d61.ctex"]
 
 [params]
 
