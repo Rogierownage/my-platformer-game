@@ -24,10 +24,13 @@ func handleMovement(delta:float) -> void:
 	handleGravity(delta)
 
 func handleGravity(delta: float) -> void:
-	animation.flip_v = get_gravity()[1] < 0
+	animation.flip_v = isGravityFlipped()
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+		
+func isGravityFlipped() -> bool:
+	return get_gravity()[1] < 0
 		
 func acceptJumpInput() -> void:
 	if not Input.is_action_just_pressed("jump"):
@@ -67,6 +70,9 @@ func applyJump() -> void:
 	$"Jump-sound".play()
 	animation.play('jump')
 	velocity.y = JUMP_VELOCITY
+	
+	if isGravityFlipped():
+		velocity.y *= -1
 	
 func updateCoyoteTimer() -> void:
 	if is_on_floor() and velocity.y >= 0:
