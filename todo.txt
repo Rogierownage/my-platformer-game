@@ -5,3 +5,4 @@
 - Mayber add an animation or sound when hitting the death plane.
 - Extract the score increasing logic. It is now somewhat duplicated.
 - Add more levels and make them connect in a way that makes sense for the player experience. Like starting with a tutorial-like level and having the bonus level later on.
+- Perhaps access the HUD and level transition timer via their respective group? (Have to make the groups first, of course) - Also think about if this is good to use for more things.

@@ -1,19 +1,21 @@
 extends CharacterBody2D
+class_name Player
 
 const SPEED: int = 100
 const JUMP_VELOCITY: int = -170
 const DEATH_PLANE_Y: int = 200
-var double_jump_available: bool = true
-@onready var animation = $"AnimatedSprite2D"
-@onready var coyoteTimer = $"Timer-coyote"
 
-func _physics_process(delta: float) -> void:
-	if GlobalVariables.paused: return
-	
+var double_jump_available: bool = true
+
+@onready var animation: AnimatedSprite2D = $"AnimatedSprite2D"
+@onready var coyoteTimer: Timer = $"Timer-coyote"
+@onready var jumpSound: AudioStreamPlayer = $"Jump-sound"
+
+func _physics_process(delta: float) -> void:	
 	up_direction = -get_gravity()
 	
 	handleMovement(delta)
-	checkDeath()
+	handleDeathPlane()
 	updateCoyoteTimer()
 	updateDoubleJump()
 	move_and_slide()
@@ -67,7 +69,7 @@ func acceptMovementInput() -> void:
 	if shouldPlayAnimation: animation.play('run')
 	
 func applyJump() -> void:
-	$"Jump-sound".play()
+	jumpSound.play()
 	animation.play('jump')
 	velocity.y = JUMP_VELOCITY
 	
@@ -83,6 +85,6 @@ func updateDoubleJump() -> void:
 	if is_on_floor():
 		double_jump_available = true
 		
-func checkDeath() -> void:
+func handleDeathPlane() -> void:
 	if position.y > DEATH_PLANE_Y:
 		get_tree().reload_current_scene()

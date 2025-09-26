@@ -1,16 +1,17 @@
 extends Node
 
-var levelPath;
+var scene: PackedScene;
 
-func startTransition(level) -> void: 
-	self.levelPath = level
-	GlobalVariables.paused = true
+func startTransition(scene: PackedScene) -> void: 
+	self.scene = scene
 	
-	get_node("../Player").animation.play('spin')
-		
+	var player: Player = get_tree().get_nodes_in_group('player')[0]
+	
+	player.set_physics_process(false)
+#	// TODO: Typehint for animation
+	player.animation.play('spin')
+
 	$AudioStreamPlayer.play()
 
 func _on_audio_stream_player_finished() -> void:
-	get_parent().get_tree().change_scene_to_file(levelPath)
-	
-	GlobalVariables.paused = false;
+	get_parent().get_tree().change_scene_to_packed(scene)
