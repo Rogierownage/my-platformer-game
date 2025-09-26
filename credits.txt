@@ -1,2 +1,2 @@
-- Various assets from SunnyLand asset pack
+- Various assets from SunnyLand asset pack (sprites, music)
 - Sound effects from Pixabay.com
