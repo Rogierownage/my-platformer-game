@@ -10,11 +10,9 @@ var double_jump_available: bool = true
 @onready var animation: AnimatedSprite2D = $"AnimatedSprite2D"
 @onready var coyoteTimer: Timer = $"Timer-coyote"
 @onready var jumpSound: AudioStreamPlayer = $"Jump-sound"
-@onready var initialAnimationY = animation.position.y
+@onready var initialAnimationPos = animation.position
 
 func _physics_process(delta: float) -> void:
-	print(animation.position.y)
-	
 	up_direction = -get_gravity()
 	
 	handleMovement(delta)
@@ -31,7 +29,7 @@ func handleMovement(delta: float) -> void:
 
 func handleGravity(delta: float) -> void:
 	animation.flip_v = isGravityFlipped()
-	animation.position.y = initialAnimationY * (-1 if isGravityFlipped() else 1)
+	animation.position.y = initialAnimationPos.y * (-1 if isGravityFlipped() else 1)
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -70,6 +68,7 @@ func acceptMovementInput() -> void:
 	velocity.x = direction * SPEED
 	
 	animation.flip_h = direction < 0
+	animation.position.x = initialAnimationPos.x * (-1 if direction < 0 else 1)
 	
 	if shouldPlayAnimation: animation.play('run')
 	
