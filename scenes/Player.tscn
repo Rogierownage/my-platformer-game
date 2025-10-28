@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://c1csyxuh1ugpj"]
+[gd_scene load_steps=26 format=3 uid="uid://cuj2qgj4elirc"]
 
 [ext_resource type="Texture2D" uid="uid://bgy52y8knrr8l" path="res://assets/visual/foxy/idle/1.png" id="1_6ysni"]
 [ext_resource type="Script" uid="uid://bddsr17fteogn" path="res://scripts/player.gd" id="1_dm7nj"]
@@ -206,41 +206,25 @@ tracks/1/keys = {
 "update": 1,
 "values": [0, 1, 2, 3]
 }
-
-[sub_resource type="Animation" id="Animation_a38lo"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4ni07"]
 _data = {
-&"RESET": SubResource("Animation_a38lo"),
 &"idle": SubResource("Animation_fulsm"),
 &"jump": SubResource("Animation_4r5pv"),
-&"run": SubResource("Animation_60mlk"),
-&"spin": SubResource("Animation_i4ail")
+&"level-transition": SubResource("Animation_i4ail"),
+&"run": SubResource("Animation_60mlk")
 }
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]

@@ -8,8 +8,7 @@ func startTransition(scene: PackedScene) -> void:
 	var player: Player = get_tree().get_nodes_in_group('player')[0]
 	
 	player.set_physics_process(false)
-#	// TODO: Typehint for animation
-	player.animation.play('spin')
+	player.animation.play('level-transition')
 
 	$AudioStreamPlayer.play()
 
