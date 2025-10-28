@@ -7,10 +7,11 @@ const DEATH_PLANE_Y: int = 200
 
 var double_jump_available: bool = true
 
-@onready var animation: AnimatedSprite2D = $"AnimatedSprite2D"
+@onready var sprite: AnimatedSprite2D = $"AnimatedSprite2D"
+@onready var animation: AnimationPlayer = $"AnimationPlayer"
 @onready var coyoteTimer: Timer = $"Timer-coyote"
 @onready var jumpSound: AudioStreamPlayer = $"Jump-sound"
-@onready var initialAnimationPos = animation.position
+@onready var initialSpritePos = sprite.position
 
 func _physics_process(delta: float) -> void:
 	up_direction = -get_gravity()
@@ -28,8 +29,8 @@ func handleMovement(delta: float) -> void:
 	handleGravity(delta)
 
 func handleGravity(delta: float) -> void:
-	animation.flip_v = isGravityFlipped()
-	animation.position.y = initialAnimationPos.y * (-1 if isGravityFlipped() else 1)
+	sprite.flip_v = isGravityFlipped()
+	sprite.position.y = initialSpritePos.y * (-1 if isGravityFlipped() else 1)
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -67,14 +68,17 @@ func acceptMovementInput() -> void:
 		
 	velocity.x = direction * SPEED
 	
-	animation.flip_h = direction < 0
-	animation.position.x = initialAnimationPos.x * (-1 if direction < 0 else 1)
+	sprite.flip_h = direction < 0
+	sprite.position.x = initialSpritePos.x * (-1 if direction < 0 else 1)
 	
 	if shouldPlayAnimation: animation.play('run')
 	
 func applyJump() -> void:
 	jumpSound.play()
+	
+	animation.stop()
 	animation.play('jump')
+	
 	velocity.y = JUMP_VELOCITY
 	
 	if isGravityFlipped():
