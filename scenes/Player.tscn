@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dirxojsafilv"]
+[gd_scene load_steps=21 format=3 uid="uid://dirxojsafilv"]
 
 [ext_resource type="Texture2D" uid="uid://bgy52y8knrr8l" path="res://assets/visual/foxy/idle/1.png" id="1_6ysni"]
 [ext_resource type="Script" uid="uid://bddsr17fteogn" path="res://scripts/player.gd" id="1_dm7nj"]
@@ -22,30 +22,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3mea3"]
 size = Vector2(20, 22)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uewl2"]
-load_path = "res://.godot/imported/Spritesheet.png-d6b3f47fd5893d8a97901f11f7f05ba3.ctex"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_u5tep"]
-atlas = SubResource("CompressedTexture2D_uewl2")
-region = Rect2(0, 128, 33, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ps8ct"]
-atlas = SubResource("CompressedTexture2D_uewl2")
-region = Rect2(33, 128, 33, 32)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_p7tob"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_u5tep")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ps8ct")
-}],
-"loop": true,
-"name": &"hurt",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_6ysni")
