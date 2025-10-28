@@ -20,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://dlq10qgjb54l" path="res://assets/visual/foxy/spin/4.png" id="19_u5tep"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3mea3"]
-size = Vector2(19, 22)
+size = Vector2(18, 22)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uewl2"]
 load_path = "res://.godot/imported/Spritesheet.png-d6b3f47fd5893d8a97901f11f7f05ba3.ctex"
@@ -120,7 +120,6 @@ script = ExtResource("1_dm7nj")
 metadata/_edit_horizontal_guides_ = [-55.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, 5)
 shape = SubResource("RectangleShape2D_3mea3")
 
 [node name="Timer-coyote" type="Timer" parent="."]
@@ -131,6 +130,7 @@ one_shot = true
 stream = ExtResource("15_3mea3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.5, -5)
 sprite_frames = SubResource("SpriteFrames_p7tob")
 animation = &"idle"
 autoplay = "idle"
