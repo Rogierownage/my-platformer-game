@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dd0t1oxhahrgj" path="res://scenes/hud.tscn" id="6_vlt6m"]
 [ext_resource type="PackedScene" uid="uid://bn4ksd7cjfp7c" path="res://scenes/level_transition.tscn" id="7_2m40a"]
 
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ciqkw")
 

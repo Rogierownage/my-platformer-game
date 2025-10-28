@@ -20,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://dlq10qgjb54l" path="res://assets/visual/foxy/spin/4.png" id="19_u5tep"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3mea3"]
-size = Vector2(22, 22)
+size = Vector2(20, 22)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uewl2"]
 load_path = "res://.godot/imported/Spritesheet.png-d6b3f47fd5893d8a97901f11f7f05ba3.ctex"
@@ -134,5 +134,3 @@ position = Vector2(1.5, -5)
 sprite_frames = SubResource("SpriteFrames_p7tob")
 animation = &"idle"
 autoplay = "idle"
-frame = 1
-frame_progress = 0.808674
