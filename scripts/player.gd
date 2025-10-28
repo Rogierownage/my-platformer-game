@@ -18,9 +18,10 @@ func _physics_process(delta: float) -> void:
 	handleDeathPlane()
 	updateCoyoteTimer()
 	updateDoubleJump()
+	
 	move_and_slide()
 	
-func handleMovement(delta:float) -> void:
+func handleMovement(delta: float) -> void:
 	acceptMovementInput()
 	acceptJumpInput()
 	handleGravity(delta)
@@ -86,5 +87,5 @@ func updateDoubleJump() -> void:
 		double_jump_available = true
 		
 func handleDeathPlane() -> void:
-	if position.y > DEATH_PLANE_Y:
+	if position.y >= DEATH_PLANE_Y:
 		get_tree().reload_current_scene()
